@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<title>Daily Exercise</title>
+	<script>=var today= new Date();</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+</head>
+<body>
+	<form>
+		
+		<table>
+			<tr><td>
+				<img src="images/idigitaldms.png" alt="Idigital DMS" height="40" width="200"></br>
+			</td></tr>
+			<tr><td>
+				<label id="timenow"><script>document.write(new Date());</script></label></br>
+			</td></tr>
+			<tr><td>
+				<label id="msg">Hello Anant! It's time for your Medication</label></br>
+			</td></tr>
+			<tr><td>
+				<label id="scn-name">Daily Exercise</label></br>
+			</td></tr>
+			<tr>
+				<td><label id="exerc">Exercise Name</label></td>
+				<td><label id="time">Time</label></td>
+				<td><label id="kcal">Kcal Burned </label></td>
+			</tr>
+			<tr>
+				<td>
+					<select label="">
+  						<option value="Treadmill">Treadmill</option>
+  						<option value="Elliptical">Elliptical</option>
+  						<option value="Running">Running</option>
+					</select>
+				</td>
+				
+				<td><input type="text" id="time" value="30 min"/></td>
+				<td><input type="text" id="kcal" value="300"/></td>
+			</tr>
+			<tr>
+				<td>
+					<select label="">
+  						<option value="Treadmill">Treadmill</option>
+  						<option value="Elliptical">Elliptical</option>
+  						<option value="Running">Running</option>
+					</select>
+				</td>
+				
+				<td><input type="text" id="time" value="25 min"/></td>
+				<td><input type="text" id="kcal" value="300"/></td>
+			</tr>
+			
+			<tr>
+				<td><input type="button" id="back" value="Back" /></td>
+				<td><input type="button" id="clear" value="Clear" /></td>
+				<td><input type="button" id="save" value="Save" /></td>
+			</tr>
+
+		</table>
+		
+	</form>
+
+</body>
+</html>

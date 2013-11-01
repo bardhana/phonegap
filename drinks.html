@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<title>Daily Diet Capture</title>
+	<script>=var today= new Date();</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+</head>
+<body>
+	<form>
+		
+		<table>
+			<tr><td>
+				<img src="images/idigitaldms.png" alt="Idigital DMS" height="40" width="200"></br>
+			</td></tr>
+			<tr><td>
+				<label id="timenow"><script>document.write(new Date());</script></label></br>
+			</td></tr>
+			<tr><td>
+				<label id="msg">Hello Anant! It's time for your Medication</label></br>
+			</td></tr>
+			<tr><td>
+				<label id="scn-name">Daily Drinks</label></br>
+			</td></tr>
+			<tr>
+				<td><label id="food">Drink Name</label></td>
+				<td><label id="carb">Carb(g)</label></td>
+				<td><label id="kcal">Kcal</label></td>
+			</tr>
+			<tr>
+				<td><label id="food"></label></td>
+				<td><label id="time">Time</label></td>
+				<td><input type="text" id="time" value="8:00 AM"/></td>
+			</tr>
+			<tr>
+				<td>
+					<select label="">
+  						<option value="Reg Coffee">Reg Coffee</option>
+  						<option value="Capuccino">Capuccino</option>
+  						<option value="Mocha">Mocha</option>
+  						<option value="Latte">Latte</option>
+					</select>
+				</td>
+				
+				<td><input type="text" id="carb" value="0"/></td>
+				<td><input type="text" id="Kcal" value="80"/></td>
+			</tr>
+			<tr>
+				<td><label id="food"></label></td>
+				<td><label id="time">Time</label></td>
+				<td><input type="text" id="time" value="3:00 PM"/></td>
+			</tr>
+			<tr>
+				<td>
+					<select label="">
+  						<option value="Water">Water</option>
+  						<option value="Coke">Coke</option>
+  						<option value="Energy Drinks">Energy Drinks</option>
+  						<option value="Chocolate">Other</option>
+					</select>
+				</td>
+				<td><input type="text" id="carb" value="15"/></td>
+				<td><input type="text" id="Kcal" value="60"/></td>
+			</tr>
+			<tr>
+				<td><label id="food"></label></td>
+				<td><label id="time">Time</label></td>
+				<td><input type="text" id="time" value="6:00 PM"/></td>
+			</tr>
+			<tr>
+				<td>
+					<select label="">
+  						<option value="Red Wine">Red Wine</option>
+  						<option value="White Wine">White Wine</option>
+  						<option value="Beer">Beer</option>
+  						<option value="Scotch">Scotch</option>
+  						<option value="Rum">Rum</option>
+  						<option value="Vodka">Vodka</option>
+					</select>
+				</td>
+				<td><input type="text" id="carb" value="0"/></td>
+				<td><input type="text" id="Kcal" value="10"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="back" value="Back" /></td>
+				<td><input type="button" id="clear" value="Clear" /></td>
+				<td><input type="button" id="save" value="Save" /></td>
+			</tr>
+		</table>
+		
+	</form>
+
+</body>
+</html>
