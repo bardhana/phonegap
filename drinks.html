@@ -3,9 +3,92 @@
 <head>
 	<title>Daily Diet Capture</title>
 	<script>=var today= new Date();</script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet2" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 </head>
 <body>
+	<!-- Start of first page -->
+	<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>DMS - Main</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<table>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><img src="images/idigitaldms.png" alt="Idigital DMS" height="40" width="200"></td></tr>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="timenow"><script>document.write(""+new Date().toLocaleDateString());</script></label></td>
+		<td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="msg">Hello Anant!</label></td>
+		<td><label id=""></label></td>
+		<td><label id="msg">It's Med Time!</label></td></tr>
+		</table>
+	<form>
+		<table>
+		<tr><td><label></label></td>
+    	<td><label id="scn-name">Daily Drinks</label></td></tr>
+    	<tr><td><label id="food">Drink Name</label></td>
+		<td><label id="carb">Carb(g)</label></td>
+		<td><label id="kcal">Kcal</label></td></tr>
+		
+		<tr><td><label id="food"></label></td>
+		<td><label id="time">Time</label></td>
+		<td><input type="text" id="time" value="10:00 AM"/></td></tr>
+				
+    	<tr><td><label for="select-native-s">Select:</label></td></tr>
+    	<tr><td><select name="select-native-s" id="select-native-s">
+        	<option value="Reg Coffee">Reg Coffee</option>
+  			<option value="Capucinno">Capuccino</option>
+  			<option value="Mocha">Mocha</option>
+  			<option value="Latte">Latte</option>
+    	</select></td>
+    	<td><input type="text" id="carb" value="20"/></td>
+		<td><input type="text" id="Kcal" value="80"/></td></tr>
+		
+		<tr><td><label id="food"></label></td>
+		<td><label id="time">Time</label></td>
+		<td><input type="text" id="time" value="3:00 PM"/></td></tr>
+				
+    	<tr><td><label for="select-native-s">Select:</label></td></tr>
+    	<tr><td><select name="select-native-s" id="select-native-s">
+        	<option value="Reg Coffee">Reg Coffee</option>
+  			<option value="Capucinno">Capuccino</option>
+  			<option value="Mocha">Mocha</option>
+  			<option value="Latte">Latte</option>
+    	</select></td>
+    	<td><input type="text" id="carb" value="20"/></td>
+		<td><input type="text" id="Kcal" value="80"/></td></tr>
+    	
+    	<tr><td><label id="food"></label></td>
+		<td><label id="time">Time</label></td>
+		<td><input type="text" id="time" value="6:00 PM"/></td></tr>
+				
+    	<tr><td><label for="select-native-s">Select:</label></td></tr>
+    	<tr><td><select name="select-native-s" id="select-native-s">
+        	<option value="Red Wine">Red Wine</option>
+  			<option value="White Wine">White Wine</option>
+  			<option value="Beer">Beer</option>
+  			<option value="Scotch">Scotch</option>
+  			<option value="Rum">Rum</option>
+  			<option value="Vodka">Vodka</option>
+    	</select></td>
+    	<td><input type="text" id="carb" value="20"/></td>
+		<td><input type="text" id="Kcal" value="80"/></td></tr>
+		
+		<tr><td><input type="button" id="back" value="Back" /></td>
+		<td><input type="button" id="clear" value="Clear" /></td>
+		<td><input type="button" id="save" value="Save" /></td></tr>
+	</table>
+	</form>	
+	<!--
 	<form>
 		
 		<table>
@@ -94,6 +177,12 @@
 		</table>
 		
 	</form>
+	-->
+	</div><!-- /content -->
 
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
 </body>
 </html>

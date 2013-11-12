@@ -3,9 +3,70 @@
 <head>
 	<title>Daily Blood Glucose</title>
 	<script>=var today= new Date();</script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet2" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 </head>
 <body>
+	<!-- Start of first page -->
+	<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>DMS - Main</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<table>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><img src="images/idigitaldms.png" alt="Idigital DMS" height="40" width="200"></td></tr>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="timenow"><script>document.write(""+new Date().toLocaleDateString());</script></label></td>
+		<td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="msg">Hello Anant!</label></td>
+		<td><label id=""></label></td>
+		<td><label id="msg">It's sample Time!</label></td></tr>
+		</table>
+	<form>
+	<table>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+    	<td><label id="scn-name">Daily Blood Glucose Sample</label></td></tr>
+    	<tr>
+			<td><label id=""></label></td>
+			<td><label id="time">Time</label></td>
+			<td><label id="before">Before (mg/dL)</label></td>
+			<td><label id="after">2 hrs After (mg/dL)</label></td>
+		</tr>
+    		<tr>
+				<td><label id="breakfast">Breakfast</label></td>
+				<td><input type="text" id="time" value="8:00 AM"/></td>
+				<td><input type="text" id="bbf" value="90"/></td>
+				<td><input type="text" id="twoaftb" value="156"/></td>
+			</tr>
+			<tr>
+				<td><label id="lunch">Lunch</label></td>
+				<td><input type="text" id="time" value="1:00 PM"/></td>
+				<td><input type="text" id="bl" value="108"/></td>
+				<td><input type="text" id="twoaftl" value="180"/></td>
+			</tr>
+			<tr>
+				<td><label id="dinner">Dinner</label></td>
+				<td><input type="text" id="time" value="8:00 PM"/></td>
+				<td><input type="text" id="bd" value="90"/></td>
+				<td><input type="text" id="twoaftd" value="165"/></td>
+			</tr>
+		
+		<tr><td><input type="button" id="back" value="Back" /></td>
+		<td><input type="button" id="clear" value="Clear" /></td>
+		<td><input type="button" id="save" value="Save" /></td></tr>
+	</table>
+	</form>	
+	<!--
 	<form>
 		
 		<table>
@@ -60,6 +121,12 @@
 		</table>
 		
 	</form>
+	-->
+	</div><!-- /content -->
 
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
 </body>
 </html>
