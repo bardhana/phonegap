@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+	<title>Daily Blood Glucose</title>
+	<script>=var today= new Date();</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet2" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+	<!-- Start of first page -->
+	<div data-role="page">
+
+	<div data-role="header">
+		<h1>DMS - Main</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<table>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><img src="images/idigitaldms.png" alt="Idigital DMS" height="40" width="200"></td></tr>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="timenow"><script>document.write(""+new Date().toLocaleDateString());</script></label></td>
+		<td><label id=""></label></td>
+		<td><label id=""></label></td>
+		<td><label id="msg">Hello Anant!</label></td></tr>
+		</table>
+	<form>
+	<table>
+		<tr><td><label id=""></label></td>
+		<td><label id=""></label></td>
+    	<td><label id="scn-name">Alerts and Reminders Settings</label></td></tr>
+    	<tr>
+			<td><label id="alerts">Alerts</label></td>
+		</tr>
+    		<tr>
+				<td><label id="high">BG High</label></td>
+				<td><input type="text" id="high" value="180"/></td>
+				<td><select name="bghigh" id="bghigh" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="low">BG Low</label></td>
+				<td><input type="text" id="low" value="70"/></td>
+				<td><select name="bglow" id="bglow" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="hba1c">HbA1C</label></td>
+				<td><input type="text" id="hba1c" value="6.0"/></td>
+				<td><select name="hba1c" id="hba1c" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="carb">Carb</label></td>
+				<td><input type="text" id="carb" value="200 g"/></td>
+				<td><select name="carb" id="carb" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="exer">Exercise</label></td>
+				<td><input type="text" id="exer" value="25"/></td>
+				<td><select name="exer" id="exer" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+		
+		
+		<tr>
+			<td><label id="reminders">Reminders</label></td>
+		</tr>
+    		<tr>
+				<td><label id="high">Medication Time</label></td>
+				<td><input type="text" id="med time1" value="8:00 AM"/></td>
+				<td><input type="text" id="med time2" value="8:00 PM"/></td>
+				<td><select name="medtime" id="medtime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="high">Insulin Time</label></td>
+				<td><input type="text" id="insl time1" value="8:00 AM"/></td>
+				<td><input type="text" id="insl time2" value="8:00 PM"/></td>
+				<td><select name="insltime" id="insltime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="high">BG Test Time BF</label></td>
+				<td><input type="text" id="bgtest time1" value="8:00 AM"/></td>
+				<td><input type="text" id="bgtest time2" value="8:00 PM"/></td>
+				<td><select name="bgtesttime" id="bgtesttime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="high">BG Test Time Lunch</label></td>
+				<td><input type="text" id="bgtest time1" value="8:00 AM"/></td>
+				<td><input type="text" id="bgtest time2" value="8:00 PM"/></td>
+				<td><select name="bgtesttime" id="bgtesttime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="high">BG Test Time Dinner</label></td>
+				<td><input type="text" id="bgtest time1" value="8:00 AM"/></td>
+				<td><input type="text" id="bgtest time2" value="8:00 PM"/></td>
+				<td><select name="bgtesttime" id="bgtesttime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="high">Exercise Time</label></td>
+				<td><input type="text" id="exer time1" value="8:00 AM"/></td>
+				<td><input type="text" id="exer time2" value="8:00 PM"/></td>
+				<td><select name="medtime" id="exertime" data-role="slider">
+    					<option value="off">Off</option>
+    					<option value="on">On</option>
+					</select>
+				</td>
+			</tr>
+			
+			
+		<tr><td><input type="button" id="back" value="Back" /></td>
+		<td><input type="button" id="clear" value="Clear" /></td>
+		<td><input type="button" id="save" value="Save" /></td></tr>
+	</table>
+	</form>	
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar" data-grid="d">
+    		<ul>
+        		<li><a href="inputs.html" class="ui-btn-active">Inputs</a></li>
+        		<li><a href="reports.html">Reports</a></li>
+        		<li><a href="messages.html">Messages</a></li>
+        		<li><a href="settings.html">Settings</a></li>
+    		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
